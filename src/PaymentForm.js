@@ -27,7 +27,7 @@ const PaymentForm = () => {
             if (!isMounted) return;
             
             try {
-                const mp = new window.MercadoPago('APP_USR-367a0730-3196-4c9d-a1e8-7e871cb84f86', {
+                const mp = new window.MercadoPago(process.env.REACT_APP_PUBLIC_KEY, {
                     locale: 'en' // Set locale to English
                 });
 
