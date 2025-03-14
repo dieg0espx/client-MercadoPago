@@ -94,7 +94,7 @@ const PaymentForm = () => {
                             }
                         },
                         paymentMethods: {
-                            maxInstallments: 6
+                            maxInstallments: 24
                         }
                     }
                 };
@@ -141,11 +141,7 @@ const PaymentForm = () => {
             
             {/* Card Payment Brick will be rendered in this container */}
             <div id="cardPaymentBrick_container" className="mb-4"></div>
-            
-            {/* Display a help message */}
-            <p className="mt-4 text-sm text-gray-600 text-center">
-                For testing, you can use Mercado Pago's test cards.
-            </p>
+
         </div>
     );
 };
